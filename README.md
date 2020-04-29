@@ -1,57 +1,15 @@
-# Template-Engine-Employee-Summary
-Application that generates an HTML webpage to display a software engineering team.  Application ideally will pass unit tests.
+## introduction
 
-# lib folder - for classes and helper code
-- 4 classes: Employee, Manager, Engineer, Intern
+the purpose is to allow users to generate information of employee within a team with their positions and display in HTML.
 
-1. EMPLOYEE class - PARENT CLASS! Properties and methods include:
- * name
- * id
- * title
- * getName()
- * getID()
- * getEmail()
- * getRole() // Returns 'Employee'
- 
-2. MANAGER class - extend Employee class
- * will have all of the above properties for Employee class, plus the below properties and methods:
-  + officeNumber
-  + getRole // Overridden to return 'Manager'
+## project structure
 
-3. ENGINEER class - extend Employee class
- * will have all of the above properties for Employee class, plus the below properties and methods:
-  + github // GitHub usernam
-  + getGitHub()
-  + getRole // Overridden to return 'Manager'
+class: firstly to generate the main class Employee with all shared parameters and then generate subclasses with inherited parameters and own specific parameters.
 
-4. INTERN class - extend Employee class
- * will have all of the above properties for Employee class, plus the below properties and methods:
-  + school
-  + getSchool()
-  + getRole() // Overridden to return 'Intern'
+Prompt user input: in app.js file, create node functions to prompt user to enter user information, store with pre-built class as objects and push into array.
 
-# Output - rendered output
- * Team HTML - nicely formatted team roster
-   + Name
-   + Role
-   + ID
-   + Role-specific property (School, link to GitHub profile, or office number)
+HTML render: in HTMLrender.js file, render all employee objects to sub-HTML files and create team.html file to display. 
 
-# Templates - HTML template for each type of user
- * Use the following templates:
-  + main.html
-  + engineer.html
-  + intern.html
-  + manager.html
- * Add placeholder character that helps program identify were te dynamic markup begins and ends.  See Test files for names.
+## issues & difficulties
 
-# App.js
- * Runs the application
-
-# Testing
-
-# Once Completed
-- Add this app and the last one (Developer Profile Generator) to my professional profile.
-
-
-
+to create the final team.html file
